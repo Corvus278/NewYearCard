@@ -3,6 +3,10 @@
   --main-btn-color: #7effd4;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   overflow: hidden;
 }
@@ -23,11 +27,21 @@ button {
   border: none;
   padding: 0;
   cursor: pointer;
+  background-color: transparent;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  margin: 0;
 }
 
 .container {
   max-width: 1024px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .btn-container {
@@ -47,4 +61,49 @@ button {
   padding: 15px 20px;
   text-align: center;
   font-size: 1.03rem;
+}
+
+.none {
+  display: none;
+}
+
+.body-newYearCard {
+  background-color: #040d21;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.tree-button {
+  width: var(--main-btn-width);
+  background-color: var(--main-btn-color);
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.03rem;
+}
+
+.text-cont {
+  margin-bottom: 100px;
+  font-family: sans-serif;
+  color: #a170fe;
+}
+
+.geralt-wrapper {
+  overflow: hidden;
+}
+
+.geralt-img {
+  width: 200px;
+  transition: transform 1s;
+}
+
+.geralt-img--hidden {
+  transform: translateY(105%)
 }
