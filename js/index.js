@@ -46,7 +46,7 @@ function index() {
 
     function btnEvent() {
       if (countClick == 5) {
-        window.location.href = window.location.href + 'newYearCard'
+        window.location.href = window.location.href + 'newYearCard.html'
       }
       else {
         btnReplace()
