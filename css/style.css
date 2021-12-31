@@ -8,7 +8,7 @@
 }
 
 body {
-  overflow: hidden;
+  background-color: #040d21;
 }
 
 ul {
@@ -36,6 +36,10 @@ img {
 
 h1 {
   margin: 0;
+}
+
+.index-body {
+  overflow: hidden;
 }
 
 .container {
@@ -101,7 +105,7 @@ h1 {
 
 .geralt-img {
   width: 200px;
-  transition: transform 1s;
+  transition: transform .8s cubic-bezier(.39,.54,.36,1.02);
 }
 
 .geralt-img--hidden {

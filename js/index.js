@@ -89,6 +89,7 @@ function newYearCard() {
 
     setTimeout(() => {
       textContent.classList.remove('none')
+      document.title = 'С новым годом!!!'
     }, 1000)
 
     setTimeout(() => {
