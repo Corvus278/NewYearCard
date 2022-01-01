@@ -104,14 +104,15 @@ function newYearCard() {
     lightTree()
 
     setTimeout(() => {
-      textContent.classList.remove('none')
+      document.querySelector('.happy-new-year').classList.remove('opacity')
       document.title = 'С новым годом!!!'
     }, 1000)
 
     if (owner) {
       setTimeout(() => {
-        document.querySelector('.receiver').textContent = `${owner}))`
-      }, 1500)
+        document.querySelector('.receiver').classList.remove('opacity')
+      }, 1700)
+      document.querySelector('.receiver').textContent = `${owner}))`
       textContent.style.marginBottom = " 25px"
     }
 
