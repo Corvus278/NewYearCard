@@ -78,6 +78,7 @@ function newYearCard() {
   const treeNoLight = document.querySelector('.tree--no-light')
   const treeLight = document.querySelector('.tree--light')
   const textContent = document.querySelector('.text-cont')
+  const santaHeader = document.querySelector('.santa-header')
   const geraltImg = document.querySelector('.geralt-img');
 
   (() => {
@@ -113,10 +114,12 @@ function newYearCard() {
         document.querySelector('.receiver').classList.remove('opacity')
       }, 1700)
       document.querySelector('.receiver').textContent = `${owner}))`
-      textContent.style.marginBottom = " 25px"
+      document.querySelector('.geralt-wrapper').style.paddingTop = "25px"
+      santaHeader.classList.add('santa-header--no-owner')
     }
 
     setTimeout(() => {
+      santaHeader.style.transform = 'none'
       geraltImg.style.transform = 'none'
     }, 2000)
   }
