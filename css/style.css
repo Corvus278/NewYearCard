@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+
 :root {
   --main-btn-width: 150px;
   --main-btn-color: #7effd4;
@@ -9,6 +11,10 @@
 
 body {
   background-color: #040d21;
+}
+
+* {
+  font-family: 'Oswald', sans-serif;
 }
 
 ul {
@@ -64,7 +70,7 @@ h1 {
   background-color: var(--main-btn-color);
   padding: 15px 20px;
   text-align: center;
-  font-size: 1.03rem;
+  font-size: 1.2rem;
 }
 
 .none {
@@ -90,12 +96,13 @@ h1 {
   padding: 15px 20px;
   margin-bottom: 30px;
   text-align: center;
-  font-size: 1.03rem;
+  font-size: 1.2rem;
+  font-family: 'Oswald';
 }
 
 .text-cont {
-  margin-bottom: 60px;
-  font-family: sans-serif;
+  margin-bottom: 50px;
+  font-family: 'Oswald';
   color: #a170fe;
 }
 
