@@ -1,10 +1,19 @@
+let owner
+
 function isPage(page) {
   const url = window.location.href
   return url[url.length - 1] == '/' ? page === 'index' : url.includes(`/${page}`)
 }
 
 function index() {
-  let countClick = 0
+  let countClick = 0;
+
+  (() => {
+    const search = new URLSearchParams(window.location.search)
+    if (search.get('owner')) {
+      owner = data.createOwner(search.get('owner'))
+    }
+  })()
 
   function mainBtn() {
     const btnCont = document.querySelector('.btn-container')
@@ -46,7 +55,7 @@ function index() {
 
     function btnEvent() {
       if (countClick == 5) {
-        window.location.href = window.location.href + 'newYearCard.html'
+        window.location.href = 'newYearCard.html' + window.location.search
       }
       else {
         btnReplace()
@@ -69,7 +78,14 @@ function newYearCard() {
   const treeNoLight = document.querySelector('.tree--no-light')
   const treeLight = document.querySelector('.tree--light')
   const textContent = document.querySelector('.text-cont')
-  const geraltImg = document.querySelector('.geralt-img')
+  const geraltImg = document.querySelector('.geralt-img');
+
+  (() => {
+    const search = new URLSearchParams(window.location.search)
+    if (search.get('owner')) {
+      owner = data.createOwner(search.get('owner'))
+    }
+  })()
 
   function btnChangeText() {
     btn.textContent = data.treeButtonText[clickCount]
@@ -91,6 +107,13 @@ function newYearCard() {
       textContent.classList.remove('none')
       document.title = 'С новым годом!!!'
     }, 1000)
+
+    if (owner) {
+      setTimeout(() => {
+        document.querySelector('.receiver').textContent = `${owner}))`
+      }, 1500)
+      textContent.style.marginBottom = " 25px"
+    }
 
     setTimeout(() => {
       geraltImg.style.transform = 'none'

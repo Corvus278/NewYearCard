@@ -21,5 +21,11 @@ const data = {
     2: '#FFAD05',
     3: '#FF7976',
     4: '#FF4944',
+  },
+
+  createOwner(owner) {
+    if (owner === 'mash') {
+      return data.owner = 'Маша'
+    }
   }
 }
