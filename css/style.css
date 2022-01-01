@@ -106,6 +106,14 @@ h1 {
   color: #a170fe;
 }
 
+.happy-new-year {
+  transition: opacity 0.3s;
+}
+
+.reciver {
+  transition: opacity 0.3s;
+}
+
 .geralt-wrapper {
   overflow: hidden;
 }
@@ -117,4 +125,8 @@ h1 {
 
 .geralt-img--hidden {
   transform: translateY(105%)
+}
+
+.opacity {
+  opacity: 0;
 }
