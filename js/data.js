@@ -26,6 +26,8 @@ const data = {
   createOwner(owner) {
     if (owner === 'mash') {
       return data.owner = 'Маша'
+    } else {
+      return owner
     }
   }
 }
