@@ -101,7 +101,6 @@ h1 {
 }
 
 .text-cont {
-  margin-bottom: 50px;
   font-family: 'Oswald';
   color: #a170fe;
 }
@@ -115,7 +114,23 @@ h1 {
 }
 
 .geralt-wrapper {
+  position: relative;
+  padding-top: 50px;
   overflow: hidden;
+}
+
+.santa-header {
+  position: absolute;
+  width: 86px;
+  top: 27px;
+  left: 43px;
+  transform: translateY(-200%);
+  transition: transform .8s cubic-bezier(.39,.54,.36,1.02);
+  z-index: 1;
+}
+
+.santa-header--no-owner {
+  top: 4px;
 }
 
 .geralt-img {
